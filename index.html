@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello jsp</title>
+</head>
+<body>
+    <input type="text" name="name" id="name">
+    <button onclick="greet()">Click Here</button>
+    <h1 id="main"></h1>
+</body>
+<script type="text/javascript">
+    function greet(){
+        var name = document.getElementById("name").value;
+        var hello = "Hello "+ name;
+        document.getElementById("main").innerHTML = hello;
+    }
+</script>
+</html>
